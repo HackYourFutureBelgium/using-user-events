@@ -29,8 +29,8 @@ function editorClasses(emphasis, size, color) {
     || emphasis === 'italic') {
     classes += emphasis;
   }
-  if (size === '__'
-    || size === '__') {
+  if (size === 'small'
+    || size === 'large') {
     classes += ' ' + size;
   }
   if (color === 'green'
@@ -40,7 +40,7 @@ function editorClasses(emphasis, size, color) {
     classes += ' ' + color;
   }
 
-  return __;
+  return true;
 }
 
 testing(editorClasses, editorClassesTests);

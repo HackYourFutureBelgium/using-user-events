@@ -1,4 +1,4 @@
-function editorClassesHandler(__) {
+function editorClassesHandler() {
   // read & process user input
   const form = event.__.form;
   const newEmphasis = form.emphasis.value;
@@ -6,10 +6,10 @@ function editorClassesHandler(__) {
   const newColor = form.color.value;
 
   // execute core logic
-  const newClasses = editorClasses(__, __, __);
+  const newClasses = editorClasses(emphasis,size,color);
 
   // display results to user
-  __.getElementById('editor').className = newClasses;
+  document.getElementById('editor').className = newClasses;
 
   // log action for developers
   console.log('\n-- user action --');
